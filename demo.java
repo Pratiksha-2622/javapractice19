@@ -1,10 +1,14 @@
-package allprogram;
+package instanceblock;
 
 public class demo {
-	
+
+	{
+	System.out.println("Instance Block");
+	}
 	public static void main(String args[])
 	{
-		System.out.println("Hello Java");
+		demo d1=new demo();
+		
 	}
-
 }
+
