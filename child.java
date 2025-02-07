@@ -1,19 +1,23 @@
-package inheritance;
+package superkeyword;
 
-public class child extends parent {
-	int b = 983;
-	public void m2() {
-		System.out.println("m2 method of Child class");
-	}
+public class child extends parent{
 	
-	
-	public static void main(String[] args) {
-		
-		child c=new child();
-		System.out.println(c.a);
-		System.out.println(c.b);
-		c.m1();
-		c.m2();
-		
-	}
+int a=50;
+public void print() {
+
+	System.out.println(a);
+	System.out.println(super.a);
+}
+public void m1() {
+	System.out.println("m1 method of Child class");
+	super.m1();
+}
+
+
+public static void main(String[] args) {
+
+	child c = new child();
+	c.print();
+	c.m1();
+}
 }

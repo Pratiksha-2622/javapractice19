@@ -1,9 +1,8 @@
-package inheritance;
+package superkeyword;
 
 public class parent {
-
-	int a=98;
-	public void m1() {
-		System.out.println("M1 method of Parent class");
+ int a=50;
+ public void m1() {
+		System.out.println("m1 method of Parent class");
 	}
 }
